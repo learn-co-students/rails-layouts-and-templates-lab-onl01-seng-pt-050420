@@ -1,10 +1,11 @@
 class StoreAdminController < ApplicationController
-    layout 'admin'
+    # layout 'admin'
     def home
+        render :layout => "admin"
     end
   
     def orders
-      render :layouts => "order_administration"
+      render :layout => "order_administration"
     end
   
     def invoice
